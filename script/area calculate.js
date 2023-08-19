@@ -40,14 +40,14 @@ function calculateRectangleArea(){
 }
 
 
-//-------- -------reusable function------- ----------- 
+//---------------reusable function------- parallelogram----------- 
 
 function calculateParallelogramArea(){
 const base=getInputValue('parallrlogram-base');
 // console.log(value);
 
 // height
-const height=document.getElementById('parallelogram-height');
+const height=getInputValue('parallelogram-height');
 // console.log(height);
 const area=base*height;
 console.log(area);
@@ -57,6 +57,17 @@ setElementInnerText('parallelogram-area',area);
 
 
 }
+
+// ----------ellips------------------
+function calculateEllipsArea(){
+  const majorRadius=getInputValue('ellips-major-radius');
+  const minorRadius=getInputValue('ellips-minor-radius');
+  const area=3.1416*majorRadius*minorRadius;
+  const areaTwoDecemal=area.toFixed(2);
+  setElementInnerText('ellips-area',area,areaTwoDecemal);
+  
+}
+
 // resable get input value field
 function getInputValue(fieldId){
   const inputField=document.getElementById(fieldId);
@@ -72,4 +83,6 @@ function setElementInnerText(elementId,area){
   
   
 }
+
+
 

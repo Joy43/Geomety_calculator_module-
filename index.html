@@ -89,7 +89,7 @@
 </p>
 <!-- height tringle -->
 <p>
-  <input  type="text"   placeholder="height" name="" class="border bg-slate-400 text-xl w-20 px-2" id="parallelogram-height" >
+  <input  type="text" id="parallelogram-height"  placeholder="height" name="" class="border bg-slate-400 text-xl w-20 px-2"  >
   <span class="ml-3">cm</span>
 </p>
 <p class="2xl">Area: <span></span> <span id="parallelogram-area">00</span> cm <sup>2</sup></p>
@@ -97,6 +97,32 @@
 
       <div class="card-actions justify-end">
         <button onclick="calculateParallelogramArea()" class="btn btn-primary">clculate</button>
+      </div>
+    </div>
+  </div>
+
+<!-- ---------------Elips area ----------- -->
+
+  <div class="card w-96 bg-base-100 shadow-xl">
+    <figure><img src="./images/ellipse.png" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">Ellips</h2>
+      <p>A=πab</p>
+<!-- base ellips-->
+<p>
+  <input type="text" id="ellips-major-radius" placeholder="width" name="" class="border bg-slate-400 text-xl w-20 px-2"  >
+  <span class="ml-3">cm</span>
+</p>
+<!-- height ellips -->
+<p>
+  <input  type="text" id="ellips-minor-radius"  placeholder="height" name="" class="border bg-slate-400 text-xl w-20 px-2"  >
+  <span class="ml-3">cm</span>
+</p>
+<p class="2xl">Area: <span></span> <span id="ellips-area">00</span> cm <sup>2</sup></p>
+
+
+      <div class="card-actions justify-end">
+        <button onclick="calculateEllipsArea()" class="btn btn-primary">clculate</button>
       </div>
     </div>
   </div>
